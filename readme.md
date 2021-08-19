@@ -1,0 +1,1 @@
+封装jaeger,prometheus,自动日志到公共项目
