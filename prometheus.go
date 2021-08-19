@@ -1,4 +1,4 @@
-package common
+package single_common
 
 import (
 	"fmt"
