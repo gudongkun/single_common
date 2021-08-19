@@ -12,7 +12,6 @@ import (
 func logToSpan(ctx context.Context, level string, msg string, fields ...log.Field) {
 	span := opentracing.SpanFromContext(ctx)
 	fa := make([]log.Field, 0, 2+len(fields))
-
 	fa = append(fa, log.String("event", msg))
 	fa = append(fa, log.String("level", level))
 	for _, field := range fields {
